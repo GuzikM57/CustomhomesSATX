@@ -41,7 +41,7 @@ export default function Navigation() {
         <div className="flex justify-center items-center h-16 lg:h-20">
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="flex items-center justify-center space-x-12">
+            <div className="flex items-center justify-center space-x-8">
               <Link href="/">
                 <span className={`px-6 py-3 text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
