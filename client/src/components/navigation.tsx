@@ -38,33 +38,26 @@ export default function Navigation() {
       isScrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 lg:h-20">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="font-playfair text-xl lg:text-2xl font-bold text-charcoal">
-              Custom Homes Boerne
-            </h1>
-          </div>
-          
+        <div className="flex justify-center items-center h-16 lg:h-20">
           {/* Desktop Navigation */}
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="flex items-center justify-center space-x-12">
               <Link href="/">
-                <span className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                <span className={`px-6 py-3 text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
                 }`}>
                   Home
                 </span>
               </Link>
               <Link href="/about">
-                <span className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                <span className={`px-6 py-3 text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/about") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
                 }`}>
                   About
                 </span>
               </Link>
               <Link href="/process">
-                <span className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                <span className={`px-6 py-3 text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/process") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
                 }`}>
                   Process
@@ -73,20 +66,20 @@ export default function Navigation() {
               {location === "/" && (
                 <button
                   onClick={() => scrollToSection("gallery")}
-                  className="text-charcoal hover:text-warm-brown px-3 py-2 text-sm font-medium transition-colors duration-200"
+                  className="text-charcoal hover:text-warm-brown px-6 py-3 text-lg font-semibold transition-colors duration-200"
                 >
                   Gallery
                 </button>
               )}
               <Link href="/reviews">
-                <span className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                <span className={`px-6 py-3 text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/reviews") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
                 }`}>
                   Reviews
                 </span>
               </Link>
               <Link href="/contact">
-                <span className={`px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200 ${
+                <span className={`px-8 py-3 rounded-md text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/contact") 
                     ? "bg-warm-brown text-white" 
                     : "bg-charcoal text-white hover:bg-warm-brown"
