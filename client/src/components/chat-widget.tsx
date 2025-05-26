@@ -15,7 +15,8 @@ const pageMessages = {
   },
   "/process": {
     title: "Have questions about our process?",
-    message: "Every step is designed around transparency and your peace of mind. Let's walk through what makes us different."
+    message: "Every step is designed around transparency and your peace of mind. Let's walk through what makes us different.",
+    buttonText: "How can we help?"
   },
   "/reviews": {
     title: "Ready to join our happy clients?",
