@@ -17,14 +17,6 @@ const testimonials = [
   {
     quote: "These guys built our home like it was their own.",
     author: "Jack R."
-  },
-  {
-    quote: "No fluff. Just two people who know what they're doing and care.",
-    author: "Rachel M."
-  },
-  {
-    quote: "Weekly updates with photos and walkthroughs made it easy.",
-    author: "Eric T."
   }
 ];
 
