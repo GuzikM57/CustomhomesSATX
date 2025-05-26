@@ -10,7 +10,8 @@ const pageMessages = {
   },
   "/about": {
     title: "Want to work with real experts?",
-    message: "Skip the salespeople and talk directly with the head estimator who's built hundreds of luxury homes."
+    message: "Skip the salespeople and talk directly with the head estimator who's built hundreds of luxury homes.",
+    buttonText: "Let's talk"
   },
   "/process": {
     title: "Have questions about our process?",
@@ -71,7 +72,7 @@ export default function ChatWidget() {
               onClick={scrollToFooter}
               className="w-full bg-warm-brown text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition-colors duration-200"
             >
-              View Contact Info
+              {currentMessage.buttonText || "View Contact Info"}
             </button>
           </motion.div>
         )}
