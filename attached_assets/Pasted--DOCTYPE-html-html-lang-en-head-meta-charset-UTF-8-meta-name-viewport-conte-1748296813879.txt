@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Custom Homes Boerne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      background: #2F2F2F;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    }
+    nav a {
+      color: #2F2F2F;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Custom Homes Boerne</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="process.html">Process</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h2>About Us</h2>
+    <p>When you work with us, you’re speaking directly with the person who’s been the head of purchasing and estimating for over 30 years at some of the most respected homebuilders in Texas.</p>
+    <p>She’s trained countless estimators, overseen multimillion-dollar budgets, and knows exactly what it takes to deliver a custom home that’s on time, on budget, and built right. Now, she leads every build personally — alongside her son, who was trained directly by her and brings a hands-on, modern touch to the business.</p>
+    <p>No fluff. No middlemen. Just high-level knowledge and a commitment to making sure your money is spent wisely — and your home is done right.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Custom Homes Boerne</p>
+  </footer>
+</body>
+</html>
