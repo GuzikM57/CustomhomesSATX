@@ -27,43 +27,33 @@ export default function Footer() {
           
           <div>
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/process" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
-                  Process
-                </Link>
-              </li>
-              {location === "/" && (
-                <li>
-                  <button
-                    onClick={() => scrollToSection("gallery")}
-                    className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
-                  >
-                    Gallery
-                  </button>
-                </li>
+            <div className="grid grid-cols-3 gap-y-2 gap-x-4">
+              <Link href="/" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
+                Home
+              </Link>
+              <Link href="/about" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
+                About
+              </Link>
+              <Link href="/process" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
+                Process
+              </Link>
+              {location === "/" ? (
+                <button
+                  onClick={() => scrollToSection("gallery")}
+                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200 text-left"
+                >
+                  Gallery
+                </button>
+              ) : (
+                <span></span>
               )}
-              <li>
-                <Link href="/reviews" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
-                  Reviews
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+              <Link href="/reviews" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
+                Reviews
+              </Link>
+              <Link href="/contact" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
+                Contact
+              </Link>
+            </div>
           </div>
         </div>
         
