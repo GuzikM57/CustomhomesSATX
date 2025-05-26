@@ -1,6 +1,9 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Link, useLocation } from "wouter";
 
 export default function Footer() {
+  const [location] = useLocation();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -38,44 +41,39 @@ export default function Footer() {
             <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <button
-                  onClick={() => scrollToSection("home")}
-                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
-                >
+                <Link href="/" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
                   Home
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("about")}
-                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
-                >
+                <Link href="/about" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
                   About
-                </button>
+                </Link>
               </li>
               <li>
-                <button
-                  onClick={() => scrollToSection("process")}
-                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
-                >
+                <Link href="/process" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
                   Process
-                </button>
+                </Link>
               </li>
+              {location === "/" && (
+                <li>
+                  <button
+                    onClick={() => scrollToSection("gallery")}
+                    className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
+                  >
+                    Gallery
+                  </button>
+                </li>
+              )}
               <li>
-                <button
-                  onClick={() => scrollToSection("gallery")}
-                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
-                >
-                  Gallery
-                </button>
-              </li>
-              <li>
-                <button
-                  onClick={() => scrollToSection("reviews")}
-                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200"
-                >
+                <Link href="/reviews" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
                   Reviews
-                </button>
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
