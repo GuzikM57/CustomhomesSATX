@@ -20,7 +20,8 @@ const pageMessages = {
   },
   "/reviews": {
     title: "Ready to join our happy clients?",
-    message: "See why our clients say we're different. Let's discuss how we can exceed your expectations too."
+    message: "See why our clients say we're different. Let's discuss how we can exceed your expectations too.",
+    buttonText: "How can we make you happy?"
   },
   "/contact": {
     title: "Need to get in touch?",
