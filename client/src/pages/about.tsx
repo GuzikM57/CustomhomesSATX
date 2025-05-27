@@ -252,7 +252,7 @@ export default function About() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-playfair text-4xl lg:text-5xl font-bold mb-6">
-              About Custom Homes Boerne
+              About Custom Homes San Antonio
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Family-owned expertise with over 30 years of custom home building experience in Texas

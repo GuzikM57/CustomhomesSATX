@@ -59,7 +59,7 @@ export default function Footer() {
         
         <div className="border-t border-gray-700 pt-8 text-center">
           <p className="text-gray-300">
-            &copy; 2025 Custom Homes Boerne. All rights reserved. | 
+            &copy; 2025 Custom Homes San Antonio. All rights reserved. | 
             <a href="#" className="hover:text-warm-brown transition-colors duration-200 ml-1">Privacy Policy</a> | 
             <a href="#" className="hover:text-warm-brown transition-colors duration-200 ml-1">Terms of Service</a>
           </p>
