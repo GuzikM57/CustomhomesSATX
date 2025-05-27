@@ -2,6 +2,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import landPhoto from "@assets/Screenshot 2025-05-27 142248.png";
+import approvalsPhoto from "@assets/Screenshot 2025-05-27 142340.png";
 
 const processSteps = [
   {
@@ -135,11 +136,11 @@ export default function Process() {
                 <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
                     <img 
-                      src={index === 1 ? landPhoto : `https://images.unsplash.com/photo-${
+                      src={index === 1 ? landPhoto : index === 3 ? approvalsPhoto : `https://images.unsplash.com/photo-${
                         index === 0 ? '1554224155-8d04cb21cd6c' : // financing
                         index === 1 ? '1500382017468-c7330b4b2fe0' : // land (fallback, won't be used)
                         index === 2 ? '1503387837-b154d5074bd2' : // floor plan
-                        index === 3 ? '1507003211169-0a1dd7ef0a50' : // approvals
+                        index === 3 ? '1507003211169-0a1dd7ef0a50' : // approvals (fallback, won't be used)
                         index === 4 ? '1504615755583-2916b52192a3' : // building
                         '1560518883-ce04c40253b8' // walkthrough
                       }?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=400`}
