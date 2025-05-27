@@ -112,7 +112,7 @@ export default function AboutSection() {
               About Our Family Business
             </h2>
             <p className="text-xl text-gray-700 mb-8 font-medium">
-              If you've been researching affordable custom home builders in San Antonio — here's what makes us different.
+              If you've been researching affordable custom home builders in San Antonio, here's what makes us different.
             </p>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p>
