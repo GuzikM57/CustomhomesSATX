@@ -229,55 +229,55 @@ function ContactModal() {
 
 const testimonials = [
   {
-    quote: "They didn't just give us a price — they explained what would cost more and what wasn't worth it.",
+    quote: "I appreciated that they walked us through every line item and actually talked us OUT of some expensive upgrades that wouldn't add real value. Most builders just say yes to everything that costs more money.",
     author: "Gustavo S.",
     rating: 5,
     project: "Custom Hill Country Home"
   },
   {
-    quote: "Every question I had — and I had a lot — was answered quickly and clearly.",
+    quote: "I'm the type who asks a million questions, and I never felt rushed or like I was bothering them. They'd text me back photos from the site when I was curious about progress — little things that meant a lot.",
     author: "Jessica W.",
     rating: 5,
     project: "Modern Family Home"
   },
   {
-    quote: "It's rare to find people this knowledgeable and this available.",
+    quote: "After dealing with three other builders who kept passing us off to different people, finding someone who actually picks up their phone and knows every detail of your project was refreshing.",
     author: "Leo G.",
     rating: 5,
     project: "Luxury Estate"
   },
   {
-    quote: "These guys built our home like it was their own.",
+    quote: "The attention to detail blew me away. They caught things our architect missed and fixed problems before they became expensive headaches. You can tell they take pride in their work.",
     author: "Jack R.",
     rating: 5,
     project: "Ranch Style Home"
   },
   {
-    quote: "No fluff. Just two people who know what they're doing and care.",
+    quote: "No sales pitch, no fancy office with marble countertops. Just honest people who showed up every day and delivered exactly what they promised. Sometimes that's all you need.",
     author: "Rachel M.",
     rating: 5,
     project: "Contemporary Design"
   },
   {
-    quote: "Weekly updates with photos and walkthroughs made it easy.",
+    quote: "Getting those weekly photo updates made me feel like I was part of the process, not just waiting around hoping everything was going okay. My wife loved being able to see progress while we were traveling.",
     author: "Eric T.",
     rating: 5,
     project: "Traditional Home"
   },
   {
-    quote: "They told us what wouldn't work — not just what we wanted to hear.",
+    quote: "They saved us from making a costly mistake with our master bathroom layout. Sure, I was disappointed at first, but they were absolutely right — and I'm grateful they spoke up instead of just taking our money.",
     author: "Allison V.",
     rating: 5,
     project: "Custom Floor Plan"
   },
   {
-    quote: "They helped us find land and gave us real cost info.",
+    quote: "They helped us understand what our budget could actually buy in today's market, then connected us with a land broker who found us the perfect lot. Felt like having an advocate, not just a contractor.",
     author: "James H.",
     rating: 5,
     project: "Dream Home Build"
   },
   {
-    quote: "You can tell we weren't just another job.",
+    quote: "When our toddler got sick and we had to reschedule multiple walk-throughs, they were completely understanding. They worked around our family's needs without making us feel like we were being difficult clients.",
     author: "Brittany L.",
     rating: 5,
     project: "Family Estate"

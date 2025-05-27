@@ -3,19 +3,19 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "They didn't just give us a price — they explained what would cost more and what wasn't worth it.",
+    quote: "I appreciated that they walked us through every line item and actually talked us OUT of some expensive upgrades that wouldn't add real value. Most builders just say yes to everything that costs more money.",
     author: "Gustavo S."
   },
   {
-    quote: "Every question I had — and I had a lot — was answered quickly and clearly.",
+    quote: "I'm the type who asks a million questions, and I never felt rushed or like I was bothering them. They'd text me back photos from the site when I was curious about progress — little things that meant a lot.",
     author: "Jessica W."
   },
   {
-    quote: "It's rare to find people this knowledgeable and this available.",
+    quote: "After dealing with three other builders who kept passing us off to different people, finding someone who actually picks up their phone and knows every detail of your project was refreshing.",
     author: "Leo G."
   },
   {
-    quote: "These guys built our home like it was their own.",
+    quote: "The attention to detail blew me away. They caught things our architect missed and fixed problems before they became expensive headaches. You can tell they take pride in their work.",
     author: "Jack R."
   }
 ];
