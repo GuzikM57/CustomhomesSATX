@@ -96,8 +96,8 @@ export default function AboutSection() {
             viewport={{ once: true }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional construction team" 
+              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              alt="Modern custom home construction" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
           </motion.div>
