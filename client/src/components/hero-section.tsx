@@ -40,7 +40,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Boerne's trusted custom home builder — delivering expert craftsmanship, personal attention, and homes built around you, not corporate overhead.
+            San Antonio & Boerne's trusted custom home builder — personal service, no fluff, and expert craftsmanship without the brand-name markup.
           </motion.p>
           <motion.div 
             className="flex flex-col sm:flex-row gap-4"
