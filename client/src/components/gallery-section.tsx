@@ -22,8 +22,8 @@ const galleryImages = [
     title: "Hill Country Style"
   },
   {
-    src: "https://images.unsplash.com/photo-1504615755583-2916b52192a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
-    alt: "Home construction process",
+    src: "@assets/image_1748371708565.png",
+    alt: "Quality craftsmanship custom home",
     title: "Quality Craftsmanship",
     span: "md:col-span-2"
   },
