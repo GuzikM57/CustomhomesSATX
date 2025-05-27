@@ -269,48 +269,69 @@ export default function About() {
 
       {/* Main Content */}
       <section className="py-20 bg-light-gray">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Centered Title */}
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <h2 className="font-playfair text-4xl lg:text-5xl font-bold text-charcoal">
+              Our Story
+            </h2>
+          </motion.div>
+
+          {/* Content Layout */}
+          <div className="grid lg:grid-cols-5 gap-12 items-start">
+            {/* Text Content - Takes up 3 columns */}
             <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <img 
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=900" 
-                alt="Custom home under construction" 
-                className="rounded-xl shadow-lg w-full h-96 lg:h-[650px] xl:h-[700px] object-cover"
-              />
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
+              className="lg:col-span-3"
+              initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-charcoal mb-8">
-                Our Story
-              </h2>
-              <div className="prose prose-lg text-gray-600 space-y-6">
-                <p>
-                  Some builders see houses. We see the dreams families build their lives around.
-                </p>
-                <p>
-                  For over three decades, we've been the team luxury builders across Texas call when the details matter most. While others chase volume, we've mastered the art of creating one extraordinary home at a time.
-                </p>
-                <p>
-                  The expertise behind every project? A master builder who cut her teeth managing multimillion-dollar developments and training the industry's best teams. She doesn't delegate your dream to junior staff — she personally oversees every estimate, every timeline, every decision that turns your vision into reality.
-                </p>
-                <p>
-                  Alongside her, a second-generation craftsman who brings fresh innovation to time-tested methods. Together, they represent something rare in luxury construction: generational knowledge paired with genuine care for your investment.
-                </p>
-                <p>
-                  When you choose us, you're not hiring a company — you're partnering with artisans who stake their family reputation on your satisfaction. No sales teams to navigate. No corporate bureaucracy to slow you down. Just two builders who show up every day until your custom home exceeds every expectation.
-                </p>
-                <p className="font-semibold text-charcoal">
-                  Because at the end of the day, we don't just build houses. We build the foundation for your family's next chapter.
-                </p>
+              <div className="max-w-none">
+                <div className="space-y-8 text-lg leading-relaxed text-gray-700">
+                  <p className="text-xl leading-relaxed">
+                    Some builders see houses. We see the dreams families build their lives around.
+                  </p>
+                  
+                  <p>
+                    For over three decades, we've been the team luxury builders across Texas call when the details matter most. While others chase volume, we've mastered the art of creating one extraordinary home at a time.
+                  </p>
+                  
+                  <p>
+                    The expertise behind every project? A master builder who cut her teeth managing multimillion-dollar developments and training the industry's best teams. She doesn't delegate your dream to junior staff — she personally oversees every estimate, every timeline, every decision that turns your vision into reality.
+                  </p>
+                  
+                  <p>
+                    Alongside her, a second-generation craftsman who brings fresh innovation to time-tested methods. Together, they represent something rare in luxury construction: generational knowledge paired with genuine care for your investment.
+                  </p>
+                  
+                  <p>
+                    When you choose us, you're not hiring a company — you're partnering with artisans who stake their family reputation on your satisfaction. No sales teams to navigate. No corporate bureaucracy to slow you down. Just two builders who show up every day until your custom home exceeds every expectation.
+                  </p>
+                  
+                  <p className="text-xl font-semibold text-charcoal leading-relaxed">
+                    Because at the end of the day, we don't just build houses. We build the foundation for your family's next chapter.
+                  </p>
+                </div>
               </div>
+            </motion.div>
+            
+            {/* Image - Takes up 2 columns */}
+            <motion.div
+              className="lg:col-span-2"
+              initial={{ opacity: 0, x: 30 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
+              <img 
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800" 
+                alt="Custom home under construction" 
+                className="rounded-xl shadow-lg w-full h-[600px] object-cover"
+              />
             </motion.div>
           </div>
 
