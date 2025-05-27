@@ -17,7 +17,7 @@ const galleryImages = [
     title: "Outdoor Living"
   },
   {
-    src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+    src: "/hill-country-style.png",
     alt: "Hill country style luxury home",
     title: "Hill Country Style"
   },
