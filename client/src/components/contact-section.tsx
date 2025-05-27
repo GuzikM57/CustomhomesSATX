@@ -34,8 +34,8 @@ export default function ContactSection() {
     },
     onSuccess: () => {
       toast({
-        title: "Thank you for your inquiry!",
-        description: "We'll get back to you within 24 hours with honest answers and next steps."
+        title: "Thank you for trusting us.",
+        description: "You'll hear back from us soon with real answers and personalized next steps.\nYou're not just another lead — your home matters to us."
       });
       form.reset();
     },
