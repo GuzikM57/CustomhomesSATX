@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-8 mb-8">
           <div>
-            <h3 className="font-playfair text-2xl font-bold mb-4">Custom Homes Boerne</h3>
+            <h3 className="font-playfair text-2xl font-bold mb-4">Custom Homes San Antonio</h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
               Building your dream home with integrity, expertise, and personal attention. 
               Family-owned and operated with over 30 years of experience.

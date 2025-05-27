@@ -287,16 +287,22 @@ export default function About() {
               </h2>
               <div className="prose prose-lg text-gray-600 space-y-6">
                 <p>
-                  When you work with us, you're speaking directly with the person who's been the head of purchasing and estimating for over 30 years at some of the most respected homebuilders in Texas.
+                  We're not a big-name builder hiding behind flashy marketing and layers of reps.
                 </p>
                 <p>
-                  She's trained countless estimators, overseen multimillion-dollar budgets, and knows exactly what it takes to deliver a custom home that's on time, on budget, and built right.
+                  We're a lean, family-run team that brings decades of hands-on experience — and personal accountability — to every home we build.
                 </p>
                 <p>
-                  Now, she leads every build personally — alongside her son, who was trained directly by her and brings a hands-on, modern touch to the business.
+                  The woman behind the scenes? She's not behind the scenes at all. She's led purchasing and estimating departments for some of the most respected builders in Texas for over 30 years. She's trained teams, managed multimillion-dollar budgets, and knows how to price, plan, and deliver a custom home without wasting a dollar — or a day.
+                </p>
+                <p>
+                  Now, she runs every project personally, partnering with her son — a second-generation builder trained directly by her — to bring modern energy and a deeply personal approach to the process.
+                </p>
+                <p>
+                  When you build with us, you don't get a handoff. You get the people who actually know the work. The ones who check every detail, run the numbers, and show up — again and again — to make sure it's done right.
                 </p>
                 <p className="font-semibold text-charcoal">
-                  No fluff. No middlemen. Just high-level knowledge and a commitment to making sure your money is spent wisely — and your home is done right.
+                  No salespeople. No confusion. Just real builders with real experience, committed to getting you the best home possible for the best price possible.
                 </p>
               </div>
             </motion.div>
