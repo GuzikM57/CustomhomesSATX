@@ -26,12 +26,6 @@ const galleryImages = [
     alt: "Quality craftsmanship custom home",
     title: "Quality Craftsmanship",
     span: "md:col-span-2"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1571068316344-75bc76f77890?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600",
-    alt: "Boerne Texas landscape",
-    title: "Beautiful Boerne",
-    span: "md:col-span-2"
   }
 ];
 
