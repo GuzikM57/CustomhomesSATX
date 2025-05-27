@@ -12,7 +12,7 @@ const galleryImages = [
     title: "Classic Elegance"
   },
   {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+    src: "/outdoor-living.png",
     alt: "Contemporary home with outdoor space",
     title: "Outdoor Living"
   },
