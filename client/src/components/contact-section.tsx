@@ -65,9 +65,7 @@ export default function ContactSection() {
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-white mb-6">
             Let's Talk About Your Home
           </h2>
-          <p className="text-xl text-gray-300">
-            No pressure — just honest answers and clear next steps.
-          </p>
+          <p className="text-xl text-gray-300">No pressure  just honest answers and clear next steps.</p>
         </motion.div>
         
         <motion.div 
@@ -232,7 +230,7 @@ export default function ContactSection() {
                 disabled={submitLead.isPending}
                 className="w-full bg-warm-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-200 focus:ring-4 focus:ring-warm-brown/20"
               >
-                {submitLead.isPending ? "Sending..." : "Start the Conversation"}
+                {submitLead.isPending ? "Sending..." : "Let's Get Started"}
               </Button>
             </form>
           </Form>
