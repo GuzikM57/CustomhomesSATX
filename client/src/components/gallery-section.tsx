@@ -71,10 +71,7 @@ export default function GallerySection() {
               />
               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="text-center">
-                  <h3 className="text-white font-semibold text-lg mb-2">{image.title}</h3>
-                  <button className="bg-white text-charcoal px-6 py-2 rounded-lg font-semibold">
-                    View Details
-                  </button>
+                  <h3 className="text-white font-semibold text-lg">{image.title}</h3>
                 </div>
               </div>
             </motion.div>
