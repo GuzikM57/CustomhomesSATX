@@ -28,72 +28,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Info Section */}
-      <section className="py-16 bg-light-gray">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <motion.div
-              className="text-center p-6 bg-white rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-16 h-16 bg-warm-brown rounded-full flex items-center justify-center mx-auto mb-4">
-                <Phone className="text-white" size={24} />
-              </div>
-              <h3 className="font-semibold text-lg text-charcoal mb-2">Phone</h3>
-              <p className="text-gray-600">(830) 555-0123</p>
-              <p className="text-sm text-gray-500 mt-1">Call or text anytime</p>
-            </motion.div>
 
-            <motion.div
-              className="text-center p-6 bg-white rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-16 h-16 bg-warm-brown rounded-full flex items-center justify-center mx-auto mb-4">
-                <Mail className="text-white" size={24} />
-              </div>
-              <h3 className="font-semibold text-lg text-charcoal mb-2">Email</h3>
-              <p className="text-gray-600">info@customhomesboerne.com</p>
-              <p className="text-sm text-gray-500 mt-1">Quick responses guaranteed</p>
-            </motion.div>
-
-            <motion.div
-              className="text-center p-6 bg-white rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-16 h-16 bg-warm-brown rounded-full flex items-center justify-center mx-auto mb-4">
-                <MapPin className="text-white" size={24} />
-              </div>
-              <h3 className="font-semibold text-lg text-charcoal mb-2">Location</h3>
-              <p className="text-gray-600">Boerne, Texas</p>
-              <p className="text-sm text-gray-500 mt-1">Serving the Hill Country</p>
-            </motion.div>
-
-            <motion.div
-              className="text-center p-6 bg-white rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              <div className="w-16 h-16 bg-warm-brown rounded-full flex items-center justify-center mx-auto mb-4">
-                <Clock className="text-white" size={24} />
-              </div>
-              <h3 className="font-semibold text-lg text-charcoal mb-2">Hours</h3>
-              <p className="text-gray-600">Mon-Fri: 8AM-6PM</p>
-              <p className="text-sm text-gray-500 mt-1">Weekend calls welcome</p>
-            </motion.div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Form Section */}
       <ContactSection />
