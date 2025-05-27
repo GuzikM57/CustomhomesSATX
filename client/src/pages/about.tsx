@@ -271,8 +271,8 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Professional construction team" 
+                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Custom home under construction" 
                 className="rounded-xl shadow-lg w-full h-auto"
               />
             </motion.div>
