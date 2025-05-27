@@ -22,7 +22,7 @@ const galleryImages = [
     title: "Hill Country Style"
   },
   {
-    src: "@assets/image_1748371708565.png",
+    src: "@assets/Screenshot 2025-05-27 134609.png",
     alt: "Quality craftsmanship custom home",
     title: "Quality Craftsmanship",
     span: "md:col-span-2"
