@@ -108,9 +108,12 @@ export default function AboutSection() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-charcoal mb-8">
+            <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-charcoal mb-4">
               About Our Family Business
             </h2>
+            <p className="text-xl text-gray-700 mb-8 font-medium">
+              If you've been researching affordable custom home builders in San Antonio — here's what makes us different.
+            </p>
             <div className="prose prose-lg text-gray-600 space-y-6">
               <p>
                 This isn't a big-name builder hiding behind layers of reps and vague pricing. When you work with us, you're speaking directly with the person who's been the head of purchasing and estimating for some of the most respected builders in Texas for over 30 years.
