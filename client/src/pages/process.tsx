@@ -262,7 +262,7 @@ const processSteps = [
       "Custom floor plan design",
       "Site-specific modifications",
       "Budget optimization recommendations",
-      "3D renderings and walkthroughs"
+      "Elevation Designs and Renderings"
     ]
   },
   {
