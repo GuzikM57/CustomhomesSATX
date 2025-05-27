@@ -8,64 +8,55 @@ const testimonials = [
     quote: "They didn't just give us a price — they explained what would cost more and what wasn't worth it.",
     author: "Gustavo S.",
     rating: 5,
-    project: "Custom Hill Country Home",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7ef0a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Custom Hill Country Home"
   },
   {
     quote: "Every question I had — and I had a lot — was answered quickly and clearly.",
     author: "Jessica W.",
     rating: 5,
-    project: "Modern Family Home",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Modern Family Home"
   },
   {
     quote: "It's rare to find people this knowledgeable and this available.",
     author: "Leo G.",
     rating: 5,
-    project: "Luxury Estate",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Luxury Estate"
   },
   {
     quote: "These guys built our home like it was their own.",
     author: "Jack R.",
     rating: 5,
-    project: "Ranch Style Home",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Ranch Style Home"
   },
   {
     quote: "No fluff. Just two people who know what they're doing and care.",
     author: "Rachel M.",
     rating: 5,
-    project: "Contemporary Design",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Contemporary Design"
   },
   {
     quote: "Weekly updates with photos and walkthroughs made it easy.",
     author: "Eric T.",
     rating: 5,
-    project: "Traditional Home",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7ef0a50?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Traditional Home"
   },
   {
     quote: "They told us what wouldn't work — not just what we wanted to hear.",
     author: "Allison V.",
     rating: 5,
-    project: "Custom Floor Plan",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Custom Floor Plan"
   },
   {
     quote: "They helped us find land and gave us real cost info.",
     author: "James H.",
     rating: 5,
-    project: "Dream Home Build",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Dream Home Build"
   },
   {
     quote: "You can tell we weren't just another job.",
     author: "Brittany L.",
     rating: 5,
-    project: "Family Estate",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b47c?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150"
+    project: "Family Estate"
   }
 ];
 
@@ -106,16 +97,9 @@ export default function Reviews() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center mb-6">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.author}
-                    className="w-12 h-12 rounded-full object-cover mr-4"
-                  />
-                  <div>
-                    <h3 className="font-semibold text-charcoal">{testimonial.author}</h3>
-                    <p className="text-sm text-gray-500">{testimonial.project}</p>
-                  </div>
+                <div className="mb-6">
+                  <h3 className="font-semibold text-charcoal">{testimonial.author}</h3>
+                  <p className="text-sm text-gray-500">{testimonial.project}</p>
                 </div>
                 
                 <div className="flex items-center mb-4">
