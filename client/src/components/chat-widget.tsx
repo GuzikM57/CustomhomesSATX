@@ -74,7 +74,7 @@ export default function ChatWidget() {
               onClick={scrollToFooter}
               className="w-full bg-warm-brown text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-opacity-90 transition-colors duration-200"
             >
-              {currentMessage.buttonText || "View Contact Info"}
+              {currentMessage.buttonText || "See What It Might Cost"}
             </button>
           </motion.div>
         )}
