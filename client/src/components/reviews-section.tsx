@@ -37,7 +37,7 @@ export default function ReviewsSection() {
           <p className="text-xl text-gray-600">We don't just talk about quality, honesty, and service. We live it.</p>
         </motion.div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <motion.div
               key={index}
