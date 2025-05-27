@@ -2,6 +2,230 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useMutation } from "@tanstack/react-query";
+import { insertLeadSchema, type InsertLead } from "@shared/schema";
+import { apiRequest } from "@/lib/queryClient";
+import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+
+function ContactModal() {
+  const [open, setOpen] = useState(false);
+  const { toast } = useToast();
+  
+  const form = useForm<InsertLead>({
+    resolver: zodResolver(insertLeadSchema),
+    defaultValues: {
+      name: "",
+      phone: "",
+      email: "",
+      land: "",
+      budget: "",
+      timeline: "",
+      notes: ""
+    }
+  });
+
+  const submitLead = useMutation({
+    mutationFn: async (data: InsertLead) => {
+      return await apiRequest("POST", "/api/leads", data);
+    },
+    onSuccess: () => {
+      toast({
+        title: "Thank you for trusting us. You'll hear back from us soon with real answers and personalized next steps. You're not just another lead — your home matters to us.",
+        description: ""
+      });
+      form.reset();
+      setOpen(false);
+    },
+    onError: (error: Error) => {
+      toast({
+        title: "Error sending message",
+        description: error.message,
+        variant: "destructive"
+      });
+    }
+  });
+
+  const onSubmit = (data: InsertLead) => {
+    submitLead.mutate(data);
+  };
+
+  return (
+    <Dialog open={open} onOpenChange={setOpen}>
+      <DialogTrigger asChild>
+        <Button className="bg-warm-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-200">
+          Start Your Project
+        </Button>
+      </DialogTrigger>
+      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto">
+        <DialogHeader>
+          <DialogTitle className="font-playfair text-2xl text-charcoal">
+            Ready to join our happy clients?
+          </DialogTitle>
+        </DialogHeader>
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <FormField
+                control={form.control}
+                name="name"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Full Name *</FormLabel>
+                    <FormControl>
+                      <Input placeholder="Your full name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="phone"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Phone Number *</FormLabel>
+                    <FormControl>
+                      <Input placeholder="(555) 123-4567" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+
+            <FormField
+              control={form.control}
+              name="email"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Email Address *</FormLabel>
+                  <FormControl>
+                    <Input type="email" placeholder="your@email.com" {...field} />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              <FormField
+                control={form.control}
+                name="land"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Do you have land?</FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select..." />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="yes">Yes, I have land</SelectItem>
+                        <SelectItem value="no">No, need help finding land</SelectItem>
+                        <SelectItem value="looking">Currently looking</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="budget"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Budget Range</FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select range..." />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="under-750k">Below $750K</SelectItem>
+                        <SelectItem value="750k-1m">$750K - $1M</SelectItem>
+                        <SelectItem value="1m-1.5m">$1M - $1.5M</SelectItem>
+                        <SelectItem value="1.5m-2m">$1.5M - $2M</SelectItem>
+                        <SelectItem value="over-2m">$2M+</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="timeline"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Timeline</FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value}>
+                      <FormControl>
+                        <SelectTrigger>
+                          <SelectValue placeholder="When to start..." />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="immediate">Ready to start now</SelectItem>
+                        <SelectItem value="3-months">Next 3 months</SelectItem>
+                        <SelectItem value="6-months">Next 6 months</SelectItem>
+                        <SelectItem value="1-year">Within a year</SelectItem>
+                        <SelectItem value="exploring">Just exploring</SelectItem>
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+            </div>
+
+            <FormField
+              control={form.control}
+              name="notes"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Tell us about your dream home</FormLabel>
+                  <FormControl>
+                    <Textarea 
+                      rows={4}
+                      placeholder="Share your vision, style preferences, must-haves, or any questions..."
+                      className="resize-none"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <div className="flex justify-end gap-3">
+              <Button type="button" variant="outline" onClick={() => setOpen(false)}>
+                Cancel
+              </Button>
+              <Button 
+                type="submit" 
+                disabled={submitLead.isPending}
+                className="bg-warm-brown hover:bg-warm-brown/90"
+              >
+                {submitLead.isPending ? "Sending..." : "Send Message"}
+              </Button>
+            </div>
+          </form>
+        </Form>
+      </DialogContent>
+    </Dialog>
+  );
+}
 
 const testimonials = [
   {
@@ -197,12 +421,7 @@ export default function Reviews() {
             <p className="text-xl text-gray-300 mb-8">
               Experience the difference that personal attention and expert craftsmanship can make.
             </p>
-            <a 
-              href="/contact"
-              className="inline-block bg-warm-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-200"
-            >
-              Start Your Project
-            </a>
+            <ContactModal />
           </motion.div>
         </div>
       </section>
