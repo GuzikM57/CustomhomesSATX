@@ -40,7 +40,7 @@ export default function AboutSection() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-lg text-charcoal mb-2">Big-Brand Markup</h3>
-                  <p className="text-gray-600">Don't want to pay $120K+ more just for a corporate logo?</p>
+                  <p className="text-gray-600">Don't want to pay $120K+ more just for a logo or builder name?</p>
                 </div>
               </div>
             </div>
