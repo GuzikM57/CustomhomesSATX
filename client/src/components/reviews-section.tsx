@@ -34,9 +34,7 @@ export default function ReviewsSection() {
           <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-charcoal mb-6">
             What Our Clients Say
           </h2>
-          <p className="text-xl text-gray-600">
-            We don't just talk about quality, honesty, and service — we live it.
-          </p>
+          <p className="text-xl text-gray-600">We don't just talk about quality, honesty, and service. We live it.</p>
         </motion.div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

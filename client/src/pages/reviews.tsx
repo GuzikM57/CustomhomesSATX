@@ -35,7 +35,13 @@ function ContactModal() {
 
   const submitLead = useMutation({
     mutationFn: async (data: InsertLead) => {
-      return await apiRequest("POST", "/api/leads", data);
+      return await fetch("https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
     },
     onSuccess: () => {
       toast({

@@ -115,9 +115,7 @@ export default function AboutSection() {
               If you've been researching affordable custom home builders in San Antonio, here's what makes us different.
             </p>
             <div className="prose prose-lg text-gray-600 space-y-6">
-              <p>
-                We're a family-owned builder specializing in affordable custom homes in San Antonio and Boerne without the inflated cost.
-              </p>
+              <p>We're a family-owned builder specializing in affordable custom homes in San Antonio and the surrounding areas without the inflated cost.</p>
               <p>
                 This isn't a big-name builder hiding behind layers of reps and vague pricing. When you work with us, you're speaking directly with the person who's been the head of purchasing and estimating for some of the most respected builders in Texas for over 30 years.
               </p>

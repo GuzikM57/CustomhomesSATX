@@ -30,7 +30,13 @@ export default function ContactSection() {
 
   const submitLead = useMutation({
     mutationFn: async (data: InsertLead) => {
-      return await apiRequest("POST", "/api/leads", data);
+      return await fetch("https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
     },
     onSuccess: () => {
       toast({
@@ -62,10 +68,8 @@ export default function ContactSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-white mb-6">
-            Want to know what your dream home might really cost?
-          </h2>
-          <p className="text-xl text-gray-300">Let us evaluate your land, your goals, and your timeline — and we'll show you what's possible.</p>
+          <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-white mb-6">Want to know what your dream home will REALLY cost?</h2>
+          <p className="text-xl text-gray-300">Let us evaluate your land, your goals, and your timeline and we'll show you what's possible.</p>
         </motion.div>
         
         <motion.div 
