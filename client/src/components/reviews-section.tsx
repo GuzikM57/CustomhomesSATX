@@ -59,7 +59,7 @@ export default function ReviewsSection() {
               <blockquote className="text-gray-700 mb-4 italic">
                 "{testimonial.quote}"
               </blockquote>
-              <cite className="font-semibold text-charcoal">— {testimonial.author}</cite>
+              <cite className="font-semibold text-charcoal">{testimonial.author}</cite>
             </motion.div>
           ))}
         </div>
