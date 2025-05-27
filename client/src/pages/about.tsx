@@ -287,22 +287,22 @@ export default function About() {
               </h2>
               <div className="prose prose-lg text-gray-600 space-y-6">
                 <p>
-                  We're not a big-name builder hiding behind flashy marketing and layers of reps.
+                  Some builders see houses. We see the dreams families build their lives around.
                 </p>
                 <p>
-                  We're a lean, family-run team that brings decades of hands-on experience — and personal accountability — to every home we build.
+                  For over three decades, we've been the team luxury builders across Texas call when the details matter most. While others chase volume, we've mastered the art of creating one extraordinary home at a time.
                 </p>
                 <p>
-                  The woman behind the scenes? She's not behind the scenes at all. She's led purchasing and estimating departments for some of the most respected builders in Texas for over 30 years. She's trained teams, managed multimillion-dollar budgets, and knows how to price, plan, and deliver a custom home without wasting a dollar — or a day.
+                  The expertise behind every project? A master builder who cut her teeth managing multimillion-dollar developments and training the industry's best teams. She doesn't delegate your dream to junior staff — she personally oversees every estimate, every timeline, every decision that turns your vision into reality.
                 </p>
                 <p>
-                  Now, she runs every project personally, partnering with her son — a second-generation builder trained directly by her — to bring modern energy and a deeply personal approach to the process.
+                  Alongside her, a second-generation craftsman who brings fresh innovation to time-tested methods. Together, they represent something rare in luxury construction: generational knowledge paired with genuine care for your investment.
                 </p>
                 <p>
-                  When you build with us, you don't get a handoff. You get the people who actually know the work. The ones who check every detail, run the numbers, and show up — again and again — to make sure it's done right.
+                  When you choose us, you're not hiring a company — you're partnering with artisans who stake their family reputation on your satisfaction. No sales teams to navigate. No corporate bureaucracy to slow you down. Just two builders who show up every day until your custom home exceeds every expectation.
                 </p>
                 <p className="font-semibold text-charcoal">
-                  No salespeople. No confusion. Just real builders with real experience, committed to getting you the best home possible for the best price possible.
+                  Because at the end of the day, we don't just build houses. We build the foundation for your family's next chapter.
                 </p>
               </div>
             </motion.div>
