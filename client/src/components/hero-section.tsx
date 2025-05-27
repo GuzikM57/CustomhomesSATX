@@ -35,7 +35,7 @@ export default function HeroSection() {
             Affordable Custom Homes <span className="text-warm-brown">Built with Integrity</span>
           </h1>
           <motion.p 
-            className="text-xl lg:text-2xl mb-8 text-gray-200 font-light leading-relaxed"
+            className="text-2xl lg:text-3xl mb-8 text-gray-200 font-medium leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
