@@ -56,10 +56,23 @@ export default function ContactSection() {
     <section id="contact" className="py-20 bg-charcoal">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
+          className="text-center mb-12"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="font-playfair text-3xl lg:text-4xl font-bold text-white mb-6">
+            Want to know what your dream home might really cost?
+          </h2>
+          <p className="text-xl text-gray-300">Let us evaluate your land, your goals, and your timeline — and we'll show you what's possible.</p>
+        </motion.div>
+        
+        <motion.div 
           className="bg-white rounded-2xl p-8 lg:p-12 shadow-2xl"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
           <Form {...form}>
