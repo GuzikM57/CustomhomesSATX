@@ -52,7 +52,7 @@ export default function HeroSection() {
               onClick={() => scrollToSection("contact")}
               className="bg-warm-brown text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all duration-200 text-center"
             >
-              Start Your Journey
+              Get a Free Design Consultation
             </button>
             <button
               onClick={() => scrollToSection("process")}
