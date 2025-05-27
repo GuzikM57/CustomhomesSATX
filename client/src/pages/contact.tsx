@@ -19,10 +19,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-playfair text-4xl lg:text-5xl font-bold mb-6">
-              Let's Talk About Your Home
+              Questions About Custom Building? We Have Answers.
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              No pressure — just honest answers and clear next steps. We're here to help you build your dream home.
+              Confused by conflicting bids? Wondering what's realistic for your budget? Not sure where to start? Let's cut through the noise with a straightforward conversation about your project.
             </p>
           </motion.div>
         </div>
