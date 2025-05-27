@@ -32,7 +32,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-playfair text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6">
-            Your Dream Home, <span className="text-warm-brown">Built with Integrity</span>
+            Affordable Custom Homes <span className="text-warm-brown">Built with Integrity</span>
           </h1>
           <motion.p 
             className="text-xl lg:text-2xl mb-8 text-gray-200 font-light leading-relaxed"
