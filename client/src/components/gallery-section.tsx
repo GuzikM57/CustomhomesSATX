@@ -7,7 +7,7 @@ const galleryImages = [
     title: "Contemporary Design"
   },
   {
-    src: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&h=800",
+    src: "/classic-elegance.png",
     alt: "Stone and brick luxury home",
     title: "Classic Elegance"
   },
