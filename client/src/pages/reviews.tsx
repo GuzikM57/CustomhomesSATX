@@ -232,7 +232,7 @@ const testimonials = [
     quote: "I appreciated that they walked us through every line item and actually talked us OUT of some expensive upgrades that wouldn't add real value. Most builders just say yes to everything that costs more money.",
     author: "Gustavo S.",
     rating: 5,
-    project: "Custom Hill Country Home"
+    project: "Custom Home"
   },
   {
     quote: "I'm the type who asks a million questions, and I never felt rushed or like I was bothering them. They'd text me back photos from the site when I was curious about progress — little things that meant a lot.",
@@ -288,7 +288,6 @@ export default function Reviews() {
   return (
     <div className="min-h-screen">
       <Navigation />
-      
       {/* Hero Section */}
       <section className="pt-20 pb-12 bg-charcoal text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -301,13 +300,10 @@ export default function Reviews() {
             <h1 className="font-playfair text-4xl lg:text-5xl font-bold mb-6">
               What Our Clients Say
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              We don't just talk about quality, honesty, and service — we live it. Here's what our clients have to say about their experience.
-            </p>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">We don't just talk about quality, honesty, and service, we live it. Here's what our clients have to say about their experience.</p>
           </motion.div>
         </div>
       </section>
-
       {/* Reviews Grid */}
       <section className="py-20 bg-light-gray">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -342,7 +338,6 @@ export default function Reviews() {
           </div>
         </div>
       </section>
-
       {/* Stats Section */}
       <section className="py-16 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -405,7 +400,6 @@ export default function Reviews() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <section className="py-16 bg-charcoal text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -425,7 +419,6 @@ export default function Reviews() {
           </motion.div>
         </div>
       </section>
-      
       <Footer />
     </div>
   );
