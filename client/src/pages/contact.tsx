@@ -10,7 +10,7 @@ export default function Contact() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-20 pb-12 bg-charcoal text-white">
+      <section className="pt-32 pb-20 bg-charcoal text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center"
@@ -18,10 +18,10 @@ export default function Contact() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="font-playfair text-4xl lg:text-5xl font-bold mb-6">
+            <h1 className="font-playfair text-4xl lg:text-5xl font-bold mb-8">
               Questions About Custom Building? We Have Answers.
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               Confused by conflicting bids? Wondering what's realistic for your budget? Not sure where to start? Let's cut through the noise with a straightforward conversation about your project.
             </p>
           </motion.div>
