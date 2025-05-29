@@ -5,7 +5,23 @@ import { setupVite, serveStatic, log } from "./vite";
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.post("/api/send-to-zapier", async (req, res) => {
+  try {
+    const zapierResponse = await fetch("https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(req.body),
+    });
 
+    if (!zapierResponse.ok) {
+      return res.status(500).json({ message: "Failed to send to Zapier" });
+    }
+
+    res.status(200).json({ message: "Sent to Zapier successfully" });
+  } catch (err) {
+    res.status(500).json({ message: "Server error", error: err });
+  }
+});
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
