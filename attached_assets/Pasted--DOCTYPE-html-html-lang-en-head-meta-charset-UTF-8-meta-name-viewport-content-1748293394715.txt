@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Homes Boerne</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Lato&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #f9f9f9;
+      color: #222222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #2F2F2F;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #2F2F2F;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #8B5E3C;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .step {
+      background: #fff;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      margin-bottom: 2rem;
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+    }
+    .step:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      resize: vertical;
+      height: 120px;
+    }
+    button {
+      background-color: #2F2F2F;
+      color: #fff;
+      padding: 0.75rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #8B5E3C;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Custom Homes Boerne</h1>
+    <p>Boerne's Trusted Custom Home Builder — Without the Big-Brand Markup</p>
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div id="home" class="container">
+    <h2>Your Home, Built with Integrity</h2>
+    <p>Get expert pricing, personal attention, and a home built around you — not around overhead.</p>
+    <h2>Frustrated with Big Builders?</h2>
+    <ul>
+      <li>Tired of being treated like a number?</li>
+      <li>Sick of vague quotes and poor communication?</li>
+      <li>Don’t want to pay $120K more just for a “name”?</li>
+    </ul>
+    <p>We’re a small, skilled, family-run company that believes building your home should feel personal, clear, and honest.</p>
+    <h2>Why Choose Us</h2>
+    <ul>
+      <li>30+ years of purchasing and estimating experience</li>
+      <li>Trained estimators and direct oversight — no middlemen</li>
+      <li>Your home is our #1 priority — not an afterthought</li>
+    </ul>
+    <h2>Are We the Right Fit?</h2>
+    <p>If you want constant updates, honest pricing, and to work with people who care more about you than their logo — we’re your builder.</p>
+  </div>
+
+  <div id="about" class="container">
+    <h2>About Us</h2>
+    <p>This isn’t a big-name builder hiding behind layers of reps and vague pricing. When you work with us, you’re speaking directly with the person who’s been the head of purchasing and estimating for some of the most respected builders in Texas for over 30 years.</p>
+    <p>She’s trained countless estimators, overseen multimillion-dollar budgets, and knows exactly what it takes to deliver a custom home that’s on time, on budget, and built right. Now, she leads every build personally — alongside her son, who was trained directly by her and brings a hands-on, modern touch to the business.</p>
+  </div>
+
+  <div id="process" class="container">
+    <h2>Our Process</h2>
+    <div class="step">
+      <h3>1. Secure Financing</h3>
+      <p>We help you figure out land loans, construction loans, and connect you with trusted lenders.</p>
+    </div>
+    <div class="step">
+      <h3>2. Find & Evaluate Land</h3>
+      <p>We assess buildability, slope, drainage, and help you avoid costly mistakes before you buy.</p>
+    </div>
+    <div class="step">
+      <h3>3. Finalize Floor Plan</h3>
+      <p>We help shape or modify your floor plan to match your land and budget, no surprises.</p>
+    </div>
+    <div class="step">
+      <h3>4. Submit for Approvals</h3>
+      <p>HOA, city, and lender paperwork — we handle it all for you.</p>
+    </div>
+    <div class="step">
+      <h3>5. Build Begins</h3>
+      <p>We manage the full build and send weekly updates — often visiting the site daily.</p>
+    </div>
+    <div class="step">
+      <h3>6. Walkthrough & Move-In</h3>
+      <p>We hand you the keys, handle final touches, and offer post-move-in support.</p>
+    </div>
+  </div>
+
+  <div id="reviews" class="container">
+    <h2>What Clients Say</h2>
+    <p>We don’t just talk about quality, honesty, and service — we live it.</p>
+    <ul>
+      <li>“They didn’t just give us a price — they explained what would cost more and what wasn’t worth it.” – Gustavo S.</li>
+      <li>“Every question I had — and I had a lot — was answered quickly and clearly.” – Jessica W.</li>
+      <li>“It’s rare to find people this knowledgeable and this available.” – Leo G.</li>
+      <li>“These guys built our home like it was their own.” – Jack R.</li>
+      <li>“No fluff. Just two people who know what they’re doing and care.” – Rachel M.</li>
+      <li>“Weekly updates with photos and walkthroughs made it easy.” – Eric T.</li>
+      <li>“They told us what wouldn’t work — not just what we wanted to hear.” – Allison V.</li>
+      <li>“They helped us find land and gave us real cost info.” – James H.</li>
+      <li>“You can tell we weren’t just another job.” – Brittany L.</li>
+      <li>“Late texts, quick responses, and real presence.” – Daniel K.</li>
+    </ul>
+  </div>
+
+  <div id="contact" class="container">
+    <h2>Let’s Talk About Your Home</h2>
+    <p>No pressure — just honest answers and clear next steps.</p>
+    <form action="#" method="POST">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="land">Do You Own Land?</label>
+      <input type="text" id="land" name="land" placeholder="Yes, No, In Progress">
+
+      <label for="budget">Estimated Budget</label>
+      <input type="text" id="budget" name="budget" placeholder="e.g. $400K–500K">
+
+      <label for="timeline">When Are You Hoping to Build?</label>
+      <input type="text" id="timeline" name="timeline" placeholder="ASAP, 3–6 months, etc.">
+
+      <label for="notes">Additional Notes or Questions</label>
+      <textarea id="notes" name="notes" placeholder="Tell us a little more about your goals or land."></textarea>
+
+      <button type="submit">Start the Conversation</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Custom Homes Boerne. All rights reserved.</p>
+  </footer>
+</body>
+</html>
