@@ -63,14 +63,7 @@ export default function Navigation() {
                   Process
                 </span>
               </Link>
-              {location === "/" && (
-                <button
-                  onClick={() => scrollToSection("gallery")}
-                  className="text-charcoal hover:text-warm-brown px-6 py-3 text-lg font-semibold transition-colors duration-200"
-                >
-                  Gallery
-                </button>
-              )}
+
               <Link href="/reviews">
                 <span className={`px-6 py-3 text-lg font-semibold transition-colors duration-200 ${
                   isActivePage("/reviews") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
@@ -127,14 +120,7 @@ export default function Navigation() {
                 Process
               </span>
             </Link>
-            {location === "/" && (
-              <button
-                onClick={() => scrollToSection("gallery")}
-                className="block w-full text-left px-3 py-2 text-charcoal hover:text-warm-brown font-medium"
-              >
-                Gallery
-              </button>
-            )}
+
             <Link href="/reviews" onClick={() => setIsOpen(false)}>
               <span className={`block w-full text-left px-3 py-2 font-medium ${
                 isActivePage("/reviews") ? "text-warm-brown" : "text-charcoal hover:text-warm-brown"
