@@ -37,16 +37,7 @@ export default function Footer() {
               <Link href="/process" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
                 Process
               </Link>
-              {location === "/" ? (
-                <button
-                  onClick={() => scrollToSection("gallery")}
-                  className="text-gray-300 hover:text-warm-brown transition-colors duration-200 text-left"
-                >
-                  Gallery
-                </button>
-              ) : (
-                <span></span>
-              )}
+
               <Link href="/reviews" className="text-gray-300 hover:text-warm-brown transition-colors duration-200">
                 Reviews
               </Link>
