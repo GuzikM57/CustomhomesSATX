@@ -1,3 +1,4 @@
+import fetch from "node-fetch";
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
@@ -7,7 +8,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.post("/api/send-to-zapier", async (req, res) => {
   try {
-    const zapierWebhookURL = "https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/"; // your actual webhook
+    const zapierWebhookURL =
+      "https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/"; // your actual webhook
 
     const zapResponse = await fetch(zapierWebhookURL, {
       method: "POST",
@@ -79,11 +81,14 @@ app.use((req, res, next) => {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
-  });
+  server.listen(
+    {
+      port,
+      host: "0.0.0.0",
+      reusePort: true,
+    },
+    () => {
+      log(`serving on port ${port}`);
+    },
+  );
 })();
