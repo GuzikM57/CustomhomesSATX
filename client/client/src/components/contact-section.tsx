@@ -30,13 +30,19 @@ export default function ContactSection() {
 
   const submitLead = useMutation({
     mutationFn: async (data: InsertLead) => {
-      return await fetch("https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
         },
         body: JSON.stringify(data)
       });
+
+      if (!response.ok) {
+        throw new Error("Something went wrong submitting your request.");
+      }
+
+      return response;
     },
     onSuccess: () => {
       toast({
