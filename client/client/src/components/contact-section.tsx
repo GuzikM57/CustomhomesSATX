@@ -30,10 +30,11 @@ export default function ContactSection() {
 
   const submitLead = useMutation({
     mutationFn: async (data: InsertLead) => {
-      const response = await fetch("/api/send-to-zapier", {
+      const response = await fetch("https://hooks.zapier.com/hooks/catch/23110786/2jqd91w/", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          // 'text/plain' is more likely to avoid Zapier CORS issues than 'application/json'
+          "Content-Type": "text/plain"
         },
         body: JSON.stringify(data)
       });
