@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ContactSection from "./contact-section";
 
 export default function AboutSection() {
   return (
@@ -138,6 +139,8 @@ export default function AboutSection() {
           </motion.div>
         </div>
       </div>
+      
+      <ContactSection />
     </section>
   );
 }
